@@ -1,0 +1,55 @@
+{
+  "name": "flexicious-react-datagrid-styles",
+  "version": "1.0.2",
+  "description": "A package that contains styles, popups, datepickers, for the Flexicious React DataGrid. This is code that is frequently modified by customers.",
+  "main": "index.js",
+  "keywords": [
+    "React",
+    "DataGrid",
+    "DataTable",
+    "Table"
+  ],
+  "author": "Flexicious",
+  "license": "SEE LICENSE IN LICENSE.TXT",
+  "babel": {
+    "comments": false,
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "scripts": {
+    "dist": "cross-env NODE_ENV=production webpack --progress --config ./config/webpack.config.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.0.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "bower-webpack-plugin": "^0.1.9",
+    "copy-webpack-plugin": "^4.0.1",
+    "style-loader": "^0.13.0",
+    "cross-env": "^2.0.0",
+    "sass-loader": "^3.1.2",
+    "css-loader": "^0.23.0",
+    "node-sass": "^3.4.2",
+    "postcss": "^5.0.11",
+    "postcss-loader": "^0.9.1",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0",
+    "flexicious-react-datagrid": "^1.1.0",
+  },
+  "dependencies": {
+    "flexicious-react-datagrid": "latest",
+    "moment": "^2.17.1",
+    "react-day-picker": "^5.0.0"
+  }
+}
