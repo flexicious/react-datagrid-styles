@@ -1,7 +1,9 @@
 import BaseAdapter from './adapter/base/BaseAdapter'
-import Styles from './styles/App.scss'
+import CssStyles from './styles/css/App.scss'
+import ApiStyles from './styles/programmatic/ApiStyles'
 
 export{
     BaseAdapter,
-    Styles
+    CssStyles,
+    ApiStyles
 }
