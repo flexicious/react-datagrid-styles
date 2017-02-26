@@ -41,6 +41,14 @@ var config = {
         commonjs: 'moment',
         amd: 'moment'
       }
+    },
+    {
+      'flexicious-react-datagrid': {
+        root: 'FlexiciousReactDataGrid',
+        commonjs2: 'flexicious-react-datagrid',
+        commonjs: 'flexicious-react-datagrid',
+        amd: 'flexicious-react-datagrid'
+      }
     }
   ],
   node: {
