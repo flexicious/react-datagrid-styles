@@ -1,6 +1,6 @@
 {
   "name": "flexicious-react-datagrid-styles",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "A package that contains styles, popups, datepickers, for the Flexicious React DataGrid. This is code that is frequently modified by customers.",
   "main": "dist/index.js",
   "keywords": [

@@ -540,3 +540,5 @@ ApiStyles.themes = [
         }
     }
 ];
+
+ApiStyles.defaults = StyleDefaults.defaults;
