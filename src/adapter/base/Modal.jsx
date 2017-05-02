@@ -23,30 +23,20 @@ SOFTWARE.
 
  */
 import React from 'react';
-
-const Modal = React.createClass({
-  displayName: 'Modal',
-  propTypes: {
-    className: React.PropTypes.string,
-    children: React.PropTypes.node.isRequired,
-    onClickOverlay: React.PropTypes.func.isRequired,
-    opacity: React.PropTypes.number,
-    visible: React.PropTypes.bool,
-    animation: React.PropTypes.string,
-  },
+class Modal extends React.Component {
   getDefaultProps() {
     return {
       className: 'Modal',
       opacity: 0.5,
     };
-  },
+  }
   getInitialState() {
     return {
       styles: this.getStyles(),
       overlayVisible: this.props.visible,
       modalVisible: this.props.visible,
     };
-  },
+  }
   componentWillReceiveProps(newProps) {
     let visible = {};
     if (newProps.visible) {
@@ -59,7 +49,7 @@ const Modal = React.createClass({
         visible = {
           modalVisible: false,
         };
-        setTimeout(()=> {
+        setTimeout(() => {
           this.setState({
             overlayVisible: false,
           });
@@ -72,7 +62,7 @@ const Modal = React.createClass({
       }
     }
     this.setState(visible);
-  },
+  }
   getStyles() {
     return {
       overlay: {
@@ -107,12 +97,12 @@ const Modal = React.createClass({
         margin: '120 auto',
         position: 'relative',
         left: "50%",
-        width: parseInt(this.props.width) + "px", 
-        height: parseInt(this.props.height) + "px", 
-        marginLeft:(0-(parseInt(this.props.width)/2)) + "px"
+        width: parseInt(this.props.width) + "px",
+        height: parseInt(this.props.height) + "px",
+        marginLeft: (0 - (parseInt(this.props.width) / 2)) + "px"
       },
     };
-  },
+  }
   renderModal() {
     if (this.state.modalVisible) {
       return (
@@ -125,7 +115,7 @@ const Modal = React.createClass({
       );
     }
     return null;
-  },
+  }
   renderContentOverlay() {
 
     return (
@@ -136,7 +126,7 @@ const Modal = React.createClass({
         {this.renderModal()}
       </div>
     );
-  },
+  }
   renderOverlay() {
     if (this.state.overlayVisible) {
       return (
@@ -148,7 +138,7 @@ const Modal = React.createClass({
       );
     }
     return null;
-  },
+  }
   render() {
 
     return (
@@ -156,10 +146,18 @@ const Modal = React.createClass({
         {this.renderOverlay()}
       </div>
     );
-  },
+  }
   stopPropagation(e) {
     e.stopPropagation();
-  },
-});
+  }
+}
+Modal.propTypes = {
+  className: React.PropTypes.string,
+  children: React.PropTypes.node.isRequired,
+  onClickOverlay: React.PropTypes.func.isRequired,
+  opacity: React.PropTypes.number,
+  visible: React.PropTypes.bool,
+  animation: React.PropTypes.string,
+}
 
 export default Modal;
