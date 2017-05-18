@@ -24,19 +24,15 @@ SOFTWARE.
  */
 import React from 'react';
 class Modal extends React.Component {
-  getDefaultProps() {
-    return {
-      className: 'Modal',
-      opacity: 0.5,
-    };
-  }
-  getInitialState() {
-    return {
+  constructor(props) {
+    super(props);
+    this.state = {
       styles: this.getStyles(),
       overlayVisible: this.props.visible,
       modalVisible: this.props.visible,
     };
   }
+
   componentWillReceiveProps(newProps) {
     let visible = {};
     if (newProps.visible) {
@@ -151,13 +147,8 @@ class Modal extends React.Component {
     e.stopPropagation();
   }
 }
-Modal.propTypes = {
-  className: React.PropTypes.string,
-  children: React.PropTypes.node.isRequired,
-  onClickOverlay: React.PropTypes.func.isRequired,
-  opacity: React.PropTypes.number,
-  visible: React.PropTypes.bool,
-  animation: React.PropTypes.string,
+Modal.defaultProps = {
+  className: 'Modal',
+  opacity: 0.5,
 }
-
 export default Modal;

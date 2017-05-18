@@ -541,4 +541,5 @@ ApiStyles.themes = [
     }
 ];
 
-    ApiStyles.defaults = StyleDefaults.defaults;
+ApiStyles.defaults = StyleDefaults.defaults;
+flexiciousNmsp.ApiStyles = ApiStyles;
