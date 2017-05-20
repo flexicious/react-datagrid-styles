@@ -428,7 +428,38 @@
 .flexiciousGrid .multiSelectComboBoxPopup .hover{
     background:#CEDBEF;
 }
+
+/*============multiselect TextInput=============*/
+
+.flexiciousGrid .multiSelectComboBoxPopup .allClearOkCancelDiv {
+    display:block;
+    margin: 6px 0;
+    border-top: 1px solid #555555;
+}
+
+.flexiciousGrid .multiSelectComboBoxPopup .allClearOkCancel {
+    
+    float: right;
+    padding: 6px;
+}
+
+.flexiciousGrid .multiSelectComboBoxPopup .allClearOkCancel .okButton,
+.flexiciousGrid .multiSelectComboBoxPopup .allClearOkCancel .cancelButton,
+.flexiciousGrid .multiSelectComboBoxPopup .allClearOkCancel .allButton,
+.flexiciousGrid .multiSelectComboBoxPopup .allClearOkCancel .clearButton {
+    float: left;
+    padding:2px;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+    width: auto;
+    height: 100%;
+    font-size: 14px;
+}
+
+
 /*=============numeric range box===================*/
+
 
 .flexiciousGrid .numericRangeBox {
     display:inline-block;
