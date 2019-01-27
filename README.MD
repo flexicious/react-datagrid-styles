@@ -24,3 +24,13 @@ We have the following adapters available:
 3) Bootstrap [Coming soon]
 
 This package is for the basic adapter.
+Visit us at:
+
+http://www.reactdatagrid.com/
+
+Instructions
+
+* Instruction Video : https://www.youtube.com/watch?v=sO3o0zG93fM
+* Running example : https://codesandbox.io/s/623p742npn
+* Code : https://github.com/flexicious/react-datagrid-getting-started 
+
